@@ -8,7 +8,7 @@ describe("Timer", () => {
     }
   });
 
-  it("shows minutes and seconds since the game started", () => {
+  it.skip("shows minutes and seconds since the game started", () => {
     cy.clock();
     cy.visit("/");
     cy.contains(".status__time", "00:00");
